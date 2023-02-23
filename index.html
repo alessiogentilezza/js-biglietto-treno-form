@@ -11,9 +11,9 @@
 
 <body>
     <div class="container">
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
         <div id="form">
-            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
             <form>
                 <label for="nomeCognome">Nome Cognome</label>
                 <input type="text" id="nomeCognome" />
@@ -23,50 +23,46 @@
 
                 <label for="casellaSelezione">Fascia di età</label>
                 <select id="casellaSelezione">
-                    <option value="Sconto applicato 20%">Minorenne</option>
-                    <option value="Prezzo Intero">Maggiorenne</option>
-                    <option value="Sconto applicato 40%">Over65</option>                </select>
+                    <option value="Sconto applicato 20%">Under 18</option>
+                    <option value="Prezzo Intero">18 - 65</option>
+                    <option value="Sconto applicato 40%">Over 65</option>
+                </select>
             </form>
             <button id="btn1" class="btn-ticket">Genera</button>
             <button id="btn2" class="btn-ticket">Annulla</button>
 
         </div>
+        <h1 id="titoloBiglietto" class="d-none">IL TUO BIGLIETTO</h1>
+
 
         <div id="ticket" class="d-none">
-            <h1>IL TUO BIGLIETTO</h1>
             <div>
                 <h3>DETTAGLIO PASSEGGERI</h3>
                 <hr>
                 </hr>
                 <div class="d-flex">
-                    <div id="titolo">Nome passeggero
+                    <div class="titolo">Nome passeggero
                         <div id="nome"></div>
                     </div>
-                    <div id="titolo">Offerta
+                    <div class="titolo">Offerta
                         <div id="offerta"></div>
                     </div>
-                    <div id="titolo">Carrozza
+                    <div class="titolo">Carrozza
                         <div id="carrozza"></div>
                     </div>
 
-                    <div id="titolo">Codice CP
+                    <div class="titolo">Codice CP
                         <div id="codice"></div>
                     </div>
 
-                    <div id="titolo">Costo biglietto
+                    <div class="titolo">Costo biglietto
                         <div id="costo"></div>
                     </div>
 
                 </div>
             </div>
-
         </div>
-
-
-
     </div>
-
-
 
 
 

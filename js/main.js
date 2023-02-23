@@ -5,6 +5,9 @@ domButton.addEventListener('click',
         const ticket = document.getElementById('ticket');
         ticket.classList.remove('d-none');
 
+        const titoloBiglietto = document.getElementById('titoloBiglietto');
+        titoloBiglietto.classList.remove('d-none');
+
         const nomeCognome = document.getElementById('nomeCognome');
         const nomeCognomeCompilato = nomeCognome.value;
         console.log(nomeCognomeCompilato);
@@ -33,7 +36,7 @@ domButton.addEventListener('click',
             costoEffettivo = (costoBase).toFixed(2);
 
         }
-
+            
         const nome = document.getElementById('nome');
         nome.innerHTML = nomeCognomeCompilato;
 
@@ -54,7 +57,6 @@ domButton.addEventListener('click',
     }
 );
 
-
 const domReset = document.querySelector('#btn2');
 
 domReset.addEventListener('click',
@@ -62,10 +64,11 @@ domReset.addEventListener('click',
         const ticket = document.getElementById('ticket');
         ticket.classList.add('d-none');
 
+        const titoloBiglietto = document.getElementById('titoloBiglietto');
+        titoloBiglietto.classList.add('d-none');
+
         nomeCognome.value = "";
 
         kmViaggio.value = "";
     }
 );
-
-
