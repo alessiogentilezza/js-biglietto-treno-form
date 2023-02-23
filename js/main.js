@@ -21,16 +21,16 @@ domButton.addEventListener('click',
         // alert(casellaSelezioneScelta);
 
 
-        if (casellaSelezioneScelta == "Minorenne") {
+        if (casellaSelezioneScelta == "Sconto applicato 20%") {
             costoEffettivo = (costoBase * 0.8).toFixed(2);
-            console.log(costoEffettivo);
+            console.log(costoEffettivo);    
 
 
-        } else if (casellaSelezioneScelta == "over65") {
+        } else if (casellaSelezioneScelta == "Sconto applicato 40%") {
             costoEffettivo = (costoBase * 0.6).toFixed(2);
 
         } else {
-            (casellaSelezioneScelta == "adult")
+            (casellaSelezioneScelta == "Prezzo Intero")
             costoEffettivo = (costoBase).toFixed(2);
 
         }
