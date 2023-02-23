@@ -1,7 +1,3 @@
-const under18 = "Minorenne"
-const adult = "Maggiorenne"
-const over65 = "Over65"
-
 const domButton = document.querySelector('#btn1');
 
 domButton.addEventListener('click',
@@ -22,16 +18,19 @@ domButton.addEventListener('click',
         const casellaSelezione = document.getElementById('casellaSelezione');
         const casellaSelezioneScelta = casellaSelezione.value;
         console.log(casellaSelezioneScelta);
+        // alert(casellaSelezioneScelta);
 
 
-        if (casellaSelezioneScelta == under18) {
+        if (casellaSelezioneScelta == "Minorenne") {
             costoEffettivo = (costoBase * 0.8).toFixed(2);
+            console.log(costoEffettivo);
 
-        } else if (casellaSelezioneScelta == over65) {
+
+        } else if (casellaSelezioneScelta == "over65") {
             costoEffettivo = (costoBase * 0.6).toFixed(2);
 
         } else {
-            (casellaSelezioneScelta == adult)
+            (casellaSelezioneScelta == "adult")
             costoEffettivo = (costoBase).toFixed(2);
 
         }
