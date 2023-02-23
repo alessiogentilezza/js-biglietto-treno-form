@@ -37,14 +37,16 @@ domButton.addEventListener('click',
         const offerta = document.getElementById('offerta');
         offerta.innerHTML = casellaSelezioneScelta;
 
-        const costo = document.getElementById('costo');
-        costo.innerHTML = costoEffettivo;
-
         const numeroCasuale = Math.floor((Math.random() * 10)) + 1;
-        alert(numeroCasuale);
-
         const carrozza = document.getElementById('carrozza');
         carrozza.innerHTML = numeroCasuale;
+
+        const numeroCasualeCodice = Math.floor((Math.random() * 99999)) + 1000;
+        const codice = document.getElementById('codice');
+        codice.innerHTML = numeroCasualeCodice;
+
+        const costo = document.getElementById('costo');
+        costo.innerHTML = costoEffettivo;
 
     }
 );
