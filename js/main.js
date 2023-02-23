@@ -13,17 +13,13 @@ domButton.addEventListener('click',
         const numeroKm = kmViaggioCompilato;
         const costoBase = (numeroKm * 0.21);
 
-        // let costoEffettivo;
-
         const casellaSelezione = document.getElementById('casellaSelezione');
         const casellaSelezioneScelta = casellaSelezione.value;
         console.log(casellaSelezioneScelta);
-        // alert(casellaSelezioneScelta);
-
 
         if (casellaSelezioneScelta == "Sconto applicato 20%") {
             costoEffettivo = (costoBase * 0.8).toFixed(2);
-            console.log(costoEffettivo);    
+            console.log(costoEffettivo);
 
 
         } else if (casellaSelezioneScelta == "Sconto applicato 40%") {
@@ -41,9 +37,14 @@ domButton.addEventListener('click',
         const offerta = document.getElementById('offerta');
         offerta.innerHTML = casellaSelezioneScelta;
 
-
         const costo = document.getElementById('costo');
         costo.innerHTML = costoEffettivo;
+
+        const numeroCasuale = Math.floor((Math.random() * 10)) + 1;
+        alert(numeroCasuale);
+
+        const carrozza = document.getElementById('carrozza');
+        carrozza.innerHTML = numeroCasuale;
 
     }
 );
@@ -60,23 +61,3 @@ domReset.addEventListener('click',
 );
 
 
-
-
-
-
-
-
-
-
-// const numeroKm = parseInt(prompt("Inserisci il numero esatto dei km da percorrere"));
-
-// const eta = parseInt(prompt("Inserisci l'età del viaggiatore"));
-// console.log(eta);
-
-// const costoBase = (numeroKm * 0.21);
-// console.log(costoBase);
-
-// const under18 = 18;
-// const over65 = 65;
-
-// let costoEffettivo;
