@@ -6,22 +6,38 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
 
 }
 
 .container {
-    /* position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
- */
- width: 1170px;
- margin: 0 auto;
- background-color: aquamarine;
- text-align: center;
+    position: relative;
+    top: 20px;
+    width: 1170px;
+    margin: 0 auto;
+    background-color: #b91547;
+    text-align: center;
+    padding: 10px;
 }
-.container * {
-    margin: 10px;
+
+#form {
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+
+}
+
+#ticket {
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+
+
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 p {
