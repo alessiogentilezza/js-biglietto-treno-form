@@ -16,7 +16,8 @@ domButton.addEventListener('click',
 
         const numeroKm = kmViaggioCompilato;
         const costoBase = (numeroKm * 0.21);
-        let costoEffettivo;
+
+        // let costoEffettivo;
 
         const casellaSelezione = document.getElementById('casellaSelezione');
         const casellaSelezioneScelta = casellaSelezione.value;
@@ -30,6 +31,7 @@ domButton.addEventListener('click',
             costoEffettivo = (costoBase * 0.6).toFixed(2);
 
         } else {
+            (casellaSelezioneScelta == adult)
             costoEffettivo = (costoBase).toFixed(2);
 
         }
@@ -46,9 +48,6 @@ domButton.addEventListener('click',
 
     }
 );
-
-
-
 
 
 const domReset = document.querySelector('#btn2');
