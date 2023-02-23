@@ -31,13 +31,15 @@ body {
     background-color: white;
     margin: 20px;
     padding: 10px;
-
-
 }
 
 .d-flex {
     display: flex;
     justify-content: space-between;
+}
+
+.d-none {
+    display: none;
 }
 
 #titolo {

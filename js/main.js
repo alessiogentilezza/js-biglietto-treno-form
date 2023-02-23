@@ -2,6 +2,9 @@ const domButton = document.querySelector('#btn1');
 
 domButton.addEventListener('click',
     function () {
+        const ticket = document.getElementById('ticket');
+        ticket.classList.remove('d-none');
+
         const nomeCognome = document.getElementById('nomeCognome');
         const nomeCognomeCompilato = nomeCognome.value;
         console.log(nomeCognomeCompilato);
@@ -56,6 +59,9 @@ const domReset = document.querySelector('#btn2');
 
 domReset.addEventListener('click',
     function () {
+        const ticket = document.getElementById('ticket');
+        ticket.classList.add('d-none');
+
         nomeCognome.value = "";
 
         kmViaggio.value = "";
