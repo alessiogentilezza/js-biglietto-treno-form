@@ -14,8 +14,28 @@
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
         <div id="form">
-            <form>
+            <form class="d-flex wrap container-small">
+                <div>
                 <label for="nomeCognome">Nome Cognome</label>
+                <input type="text" id="nomeCognome" />
+    
+                </div>
+                <div>
+                    <label for="kmViaggio">km da percorrere</label>
+                    <input type="number" id="kmViaggio" />
+                    <!-- <input type="text" id="kmViaggio" /> -->
+        
+                </div>
+                <div>
+                    <label for="casellaSelezione">Fascia di età</label>
+                    <select id="casellaSelezione">
+                        <option value="Sconto applicato 20%">Under 18</option>
+                        <option value="Prezzo Intero">Maggiorenne</option>
+                        <option value="Sconto applicato 40%">Over 65</option>
+                    </select>        
+                </div>
+
+                <!-- <label for="nomeCognome">Nome Cognome</label>
                 <input type="text" id="nomeCognome" />
 
                 <label for="kmViaggio">km da percorrere</label>
@@ -26,7 +46,7 @@
                     <option value="Sconto applicato 20%">Under 18</option>
                     <option value="Prezzo Intero">18 - 65</option>
                     <option value="Sconto applicato 40%">Over 65</option>
-                </select>
+                </select> -->
             </form>
             <button id="btn1" class="btn-ticket">Genera</button>
             <button id="btn2" class="btn-ticket">Annulla</button>

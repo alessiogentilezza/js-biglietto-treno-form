@@ -6,18 +6,20 @@
 
 body {
     font-family: sans-serif;
+    padding: 20px;
 }
 
 .container {
-    position: relative;
-    top: 20px;
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
     background-color: #b91547;
     text-align: center;
     padding: 10px;
     border-radius: 10px;
-
+}
+.container-small {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 #form {
@@ -25,8 +27,6 @@ body {
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
-
-
 }
 
 #ticket {
@@ -34,12 +34,14 @@ body {
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
-
 }
 
 .d-flex {
     display: flex;
     justify-content: space-between;
+}
+.wrap {
+    flex-wrap: wrap;
 }
 
 .d-none {
@@ -54,7 +56,6 @@ h1 {
     color: white;
 }
 
-
 button {
     margin: 10px;
     padding: 5px;
@@ -62,8 +63,9 @@ button {
 }
 
 label {
+    display: block;
     font-weight: bold;
-    padding: 0 10px;
+    padding: 10px;
 }
 
 hr {

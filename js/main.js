@@ -13,8 +13,9 @@ domButton.addEventListener('click',
         console.log(nomeCognomeCompilato);
 
         const kmViaggio = document.getElementById('kmViaggio');
-        const kmViaggioCompilato = kmViaggio.value;
+        const kmViaggioCompilato = parseInt(kmViaggio.value);
         console.log(kmViaggioCompilato);
+        console.log(typeof kmViaggioCompilato);
 
         const numeroKm = kmViaggioCompilato;
         const costoBase = (numeroKm * 0.21);
@@ -70,5 +71,7 @@ domReset.addEventListener('click',
         nomeCognome.value = "";
 
         kmViaggio.value = "";
+
+        casellaSelezione.value ="Prezzo Intero";
     }
 );
